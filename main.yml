@@ -1,5 +1,5 @@
 ---
-  # ansible-playbook scraper.yml
+  # ansible-playbook main.yml
   - name: run tasks on all hosts
     gather_facts: no
     hosts: localhost
@@ -36,7 +36,7 @@
           
           
           
-      - name: Simple PUT operation
+      - name: Put file into newly creates S3 bucket
         aws_s3:
           bucket: mybucketkk07
           object: weather.csv
@@ -45,7 +45,7 @@
           permission: public-read
           
           
-      - name: Simple geturl operation
+      - name: Get the url of the object
         aws_s3:
           bucket: mybucketkk07
           object: weather.csv
