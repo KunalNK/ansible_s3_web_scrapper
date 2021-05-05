@@ -18,7 +18,7 @@
          dest: /home/ec2-user/web_scrap_preq
          update: no
          
-      - name: Run the bash script command
+      - name: Run the bash scripts command
         shell: bash /home/ec2-user/web_scrap_preq/preq.sh
 
       - name: Clone github repository
