@@ -2,7 +2,7 @@
   # ansible-playbook main.yml
   - name: run tasks on all hosts
     gather_facts: no
-    hosts: aws_ec2
+    hosts: all
     become: True
     tasks:    
       - name: Install python3 & git package
